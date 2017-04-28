@@ -1,0 +1,3 @@
+source ../package_A/bin
+
+nuget package_A

@@ -1,0 +1,65 @@
+
+
+GROUP fixed_optimistic_rc
+NUGET
+  remote: package_A/bin
+    package_A (2.0.0)
+  remote: package_B/bin
+    package_B (1.2.0)
+      package_A (>= 2.0 < 3.0)
+
+GROUP fixed_pinned_1.0.0
+NUGET
+  remote: package_A/bin
+    package_A (1.0.0)
+  remote: package_B/bin
+    package_B (1.0.0)
+      package_A (>= 1.0 < 2.0)
+
+GROUP fixed_pinned_rc_channel
+NUGET
+  remote: package_A/bin
+    package_A (1.1.0-rc)
+  remote: package_B/bin
+    package_B (1.1)
+      package_A (>= 1.0.0-rc < 2.0.0-rc)
+
+GROUP latest
+NUGET
+  remote: package_A/bin
+    package_A (2.0.0)
+  remote: package_B/bin
+    package_B (1.2.0)
+      package_A (>= 2.0 < 3.0)
+
+GROUP st_1.1
+NUGET
+  remote: package_A/bin
+    package_A (1.0.0)
+  remote: package_B/bin
+    package_B (1.0.0)
+      package_A (>= 1.0 < 2.0)
+
+GROUP st_1.1_c_alpha
+NUGET
+  remote: package_A/bin
+    package_A (1.1.0-rc)
+  remote: package_B/bin
+    package_B (1.0.1-alpha2)
+      package_A (>= 1.0.0-alpha < 2.0.0-alpha)
+
+GROUP st_1.1_c_alpha_beta
+NUGET
+  remote: package_A/bin
+    package_A (1.1.0-rc)
+  remote: package_B/bin
+    package_B (1.0.1-beta)
+      package_A (>= 1.0.0-beta < 2.0.0-beta)
+
+GROUP st_1.1_c_prerelease
+NUGET
+  remote: package_A/bin
+    package_A (1.1.0-rc)
+  remote: package_B/bin
+    package_B (1.1.0-rc)
+      package_A (>= 1.0.0-rc < 2.0.0-rc)
